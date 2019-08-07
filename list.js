@@ -290,7 +290,7 @@ function prepareTable(info) {
         item.href = item.keyText;
       }
     } else {
-      item.href = BUCKET_WEBSITE_URL + '/' + encodeURIComponent(item.Key);
+      item.href = BUCKET_URL + '/' + encodeURIComponent(item.Key);
       item.href = item.href.replace(/%2F/g, '/');
     }
     var row = renderRow(item, cols);
